@@ -1,0 +1,87 @@
+.row {
+    min-height: 100vh; /* changed height to min-height */
+}
+
+.linija {
+    width: 270px;
+    margin: auto;
+    background-color: orange;
+}
+
+.info {
+    text-align: center;
+}
+
+.prvi {
+    background-color: #F6F6F6;
+    padding: 20px; /* Added padding */
+}
+
+.drugi {
+    border-right: 1px dotted gray;
+    padding: 20px; /* Added padding */
+}
+
+.profile-img { /* Changed img selector to class */
+    display: block;
+    margin: 50px auto 20px; /* Adjusted margins */
+    border-radius: 40%;
+    padding: 2px;
+    box-shadow: 0 0 0 8px linear-gradient(60deg, #EFA51A 10%, #ce00 100%);
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.square {
+    margin-top: 20px; /* Adjusted margins */
+    padding: 7px;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: orange;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 9px 12px 16px -8px rgba(0, 0, 0, 0.79);
+}
+
+.square2, .square3 {
+    padding: 7px;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px; /* Adjusted margins */
+    width: 150px;
+    background-color: orange;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 9px 12px 16px -8px rgba(0, 0, 0, 0.79);
+}
+
+.square3 {
+    height: auto; /* Adjusted height */
+    padding: 15px 7px; /* adjusted padding*/
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .col-md-4, .col-md-8, .col-md-6 {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .drugi {
+        border-right: none; /* remove border*/
+    }
+
+    .profile-img {
+        margin-top:20px;
+    }
+}
